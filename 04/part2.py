@@ -104,9 +104,6 @@ def processGame(gameNumbers, gameData):
                     if not matchFound:
                         matchFound = anyColumnComplete(gameData)
 
-    # printGame(gameData)
-    # input("continue...")
-
     return {"cycles": index, "gameData": gameData, "finalDraw": finalDraw}
 
 
@@ -144,8 +141,6 @@ def processGames(input):
             winner = gameNumbers["gameData"]
             finalDraw = gameResult["finalDraw"]
 
-        print(
-            f"best: {bestCycles}, current: {currentCycles}, draw: {finalDraw}")
         gameIndex += 1
 
     return {"winner": winner, "finalDraw": finalDraw}

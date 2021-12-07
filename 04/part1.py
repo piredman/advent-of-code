@@ -144,8 +144,6 @@ def processGames(input):
             winner = gameNumbers["gameData"]
             finalDraw = gameResult["finalDraw"]
 
-        print(
-            f"best: {bestCycles}, current: {currentCycles}, draw: {finalDraw}")
         gameIndex += 1
 
     return {"winner": winner, "finalDraw": finalDraw}
