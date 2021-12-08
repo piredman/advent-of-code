@@ -1,5 +1,4 @@
 import csv
-from os import getpgid
 from colorama import Fore
 fileName = '05/input.txt'
 gridSize = 1000
