@@ -7,7 +7,7 @@ PRIORITIES = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def load_data():
     input = []
     group = []
-    with open('03/input.txt', newline='') as fileData:
+    with open('2022/03/input.txt', newline='') as fileData:
         reader = csv.reader(fileData)
         for index, row in enumerate(reader):
             group.append(row[0])

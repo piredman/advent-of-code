@@ -3,7 +3,7 @@ import csv
 
 def load_data():
     input = []
-    with open('04/input.txt', newline='') as fileData:
+    with open('2022/04/input.txt', newline='') as fileData:
         reader = csv.reader(fileData)
         for row in reader:
             input.append([row[0], row[1]])

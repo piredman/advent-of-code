@@ -1,10 +1,11 @@
 import csv
 import array
 
+
 def loadData():
     numberData = array.array('i', [])
     numberData.append(0)
-    with open('input.txt', newline='') as fileData:
+    with open('2022/01/input.txt', newline='') as fileData:
         reader = csv.reader(fileData)
         for row in reader:
             if len(row) == 0:

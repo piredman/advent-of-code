@@ -32,7 +32,7 @@ hands = {
 
 def loadData():
     input = []
-    with open('02/input.txt', newline='') as fileData:
+    with open('2022/02/input.txt', newline='') as fileData:
         reader = csv.reader(fileData)
         for row in reader:
             for column in row:
