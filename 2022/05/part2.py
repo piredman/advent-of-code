@@ -97,16 +97,6 @@ def get_top_crates(input: list[Stack]):
     return output
 
 
-def print_data(input):
-    for row in input['stacks']:
-        print(row)
-
-    print()
-
-    for row in input['instructions']:
-        print(row)
-
-
 def print_stacks(input):
     for stack in input:
         print(stack)
@@ -118,15 +108,8 @@ def print_instructions(input):
 
 
 data = load_data()
-# print_data(data)
-
 stacks = create_stacks(data['stacks'])
-print_stacks(stacks)
-
 instructions = create_instructions(data['instructions'])
-print_instructions(instructions)
-
 updatedStacks = run_instructions(instructions, stacks)
-print_stacks(updatedStacks)
 
 print(get_top_crates(updatedStacks))
