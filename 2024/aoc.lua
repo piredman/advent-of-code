@@ -19,7 +19,7 @@ local split = function (inputstr, sep)
   end
   local t = {}
   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-    table.insert(t, str)
+    table.insert(t, tonumber(str))
   end
   return t
 end
