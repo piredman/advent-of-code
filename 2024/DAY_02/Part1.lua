@@ -1,7 +1,7 @@
 local aoc = dofile('aoc.lua')
 aoc.clear_messages()
 
-local data = aoc.load_file('input.txt')
+local data = aoc.load_file('input.txt', aoc.parser_space_delimited_numbers)
 
 -- aoc.print_table(data)
 
